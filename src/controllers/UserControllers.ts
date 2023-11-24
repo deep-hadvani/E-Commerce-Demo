@@ -7,7 +7,7 @@ import nodemailer from "nodemailer";
 
 import userSchema from '../validationSchema/userSchema'; 
 const invalidatedTokens = new Set<string>();
-
+// demo
 class AuthController {
     // register
     static async register(req: Request, res: Response) {
@@ -228,7 +228,6 @@ class AuthController {
         res.status(500).json({ success: false, message: 'Profile retrieval failed' });
       }
     }
-
   // getAllUsers
 
   static async getAllUsers(req: Request, res: Response) {
