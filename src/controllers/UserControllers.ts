@@ -230,6 +230,8 @@ class AuthController {
     }
   // getAllUsers
 
+  // hello
+
   static async getAllUsers(req: Request, res: Response) {
     const { page = process.env.PAGE_LIMIT, per_page = process.env.PER_PAGE_LIMIT, sort, search }: any = req.query;
     
