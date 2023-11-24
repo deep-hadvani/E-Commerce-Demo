@@ -213,9 +213,7 @@ class AuthController {
       try {
         if (token) {
           // Find the admin by the token
-          //hello
           const user = await UserModel.findOne({ token });
-  
           if (user) {
             // Return the admin's profile
             res.status(200).json({ success: true, user });
